@@ -11,12 +11,12 @@ import (
 
 	"net/http"
 
-	"github.com/go-resty/resty"
 	"github.com/lyft/flinkk8soperator/pkg/controller/config"
 	"github.com/lyft/flytestdlib/logger"
 	"github.com/lyft/flytestdlib/promutils"
 	"github.com/lyft/flytestdlib/promutils/labeled"
 	"github.com/pkg/errors"
+	"gopkg.in/resty.v1"
 )
 
 const GetJobsOverviewURL = "/jobs/%s"
